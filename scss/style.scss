@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+}
+
+@import "./base/init";
+@import "./mixin/animation";
+@import "./mixin/color";
+@import "./mixin/font";
+@import "./module/footer";
+@import "./module/header";

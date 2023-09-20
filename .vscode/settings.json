@@ -1,0 +1,15 @@
+{
+  "liveSassCompile.settings.showOutputWindowOn": "Warning",
+  "liveSassCompile.settings.formats": [
+
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": null,
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.NoBrowser": true
+}
