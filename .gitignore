@@ -1,3 +1,5 @@
 *.DS_Store
 *.min.css
 *.min.css.map
+dev.bat
+/node_modules
