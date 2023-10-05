@@ -11,5 +11,6 @@
   ],
   "liveSassCompile.settings.watchOnLaunch": true,
   "liveServer.settings.host": "localhost",
-  "liveServer.settings.NoBrowser": true
+  "liveServer.settings.NoBrowser": true,
+  "liveServer.settings.port": 5501
 }
