@@ -1,1 +1,9 @@
 @import "../style.scss";
+#content {
+  max-height: calc(100vh - 70px);
+}
+.card {
+  & > img {
+    background-color: #ccc;
+  }
+}

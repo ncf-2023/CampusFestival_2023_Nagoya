@@ -1,4 +1,7 @@
-// body {
-//   background-color: #fff;
-//   display: flex;
-// }
+.navbar {
+  & > div > div > .navbar-nav > li > a > .material-symbols-outlined {
+    font-size: 40px;
+  }
+  max-height: 70px;
+  z-index: 1020;
+}
