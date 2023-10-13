@@ -12,15 +12,16 @@
     <!--画像は素材が無いんで同じの使い回してます-->
     <div class="main" id="content">
       <div class="png">
-        <img src="media/about_works211101144004Character.png" alt="" /><!--てるてる坊主みたいなやつ-->
-        <img src="media/about_works231100574001Character.png" alt="" />
-        <img src="media/about_works231100705001Character.png" alt="" />
-        <img src="media/about_works211101144001Character.png" alt="" />
-      </div>
-      <!--scssでflexおねがいします--><!--画像サイズバラバラじゃねーかよ（発狂）-->
-      <img src="media/index_logostr.png" alt="文字だけロゴ" />
+        <ul>
+        <li><img src="media/about_works231100574001Character.png" alt=""width="400" ></li><!--てるてる坊主みたいなやつ-->
+        <li><img src="media/about_works211101144001Character.png" alt=""width="300" ></li> 
+        <li><img src="media/about_works231100705001Character.png" alt=""width="200" ></li> 
+        </ul>
+        
+      </div><!--scssでflexおねがいします--><!--画像サイズバラバラじゃねーかよ（発狂）-->
+      <img src="media/index_logostr.png" alt="文字だけロゴ" width="1000" style="display: block; margin: auto;"/>
       <div class="themeandtimetable">
-        <p>テーマ<br />〜ハロウィン〜<br />開催日時　10/28</p>
+        <p>テーマ<br />〜ハロウィン〜<br />開催日時　10/28（土）</p>
       </div>
       <div class="time schedule">
         <h1>タイムスケジュール</h1>
@@ -67,7 +68,7 @@
       <div class="info">
         <h1>案内</h1>
         <p>愛知県名古屋市中区新栄町2-3 YWCAビル5階</p>
-        <img src="media/index_madori.png" />
+        <img src="media/index_madori.png"  width="800"  style="display: block; margin: auto;"/>
       </div>
       <div class="attention">
         <h1>注意事項</h1>
@@ -76,13 +77,31 @@
         (例:互いに顔を知らないネットで知り合った友人などや、名前を知らないけど仲良し！といった方もご遠慮願います。)<br />
         また、保護者の方はご参加いただく場合事前にメンターにお伝えください。<br />
         何かご不明な点がありましたら。キャンパス内にいる、カードを下げているスタッフまでお申し付けください。<br />
-        当日、キャンパス内にはコスプレをしている方もおります。more…
+        
       </div>
       <div class="day">
         <h1>当日について</h1>
+        当日、キャンパス内にはコスプレをしている方もおります。more…
       </div>
     </div>
     <script src="./js/header.js"></script>
     <script src="./js/plugin/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+<style>
+  ul {
+display: flex;
+justify-content: center;
+}
+
+li {
+list-style: none;
+}
+
+li:nth-child(2) {
+margin: 0 10px;
+}
+</style>
+<style>
+  img{margin: 50px;}
+</style>
