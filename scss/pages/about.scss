@@ -1,6 +1,11 @@
 @import "../style.scss";
-#content {
-  max-height: calc(100vh - 70px);
+#wrapper {
+  background-image: url(../../media/index_bgMainNew.png);
+  background-image: linear-gradient(180deg, #cc80cc, #817ed3);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
 }
 .card {
   & > img {
@@ -9,4 +14,40 @@
 }
 .domTemplate {
   display: none;
+}
+
+#backgroundShapesCircle {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../media/index_bgShapes.png);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+}
+
+// #wrapper {
+//   position: relative;
+//   z-index: 1;
+// }
+
+#content {
+  background-color: #fff8;
+  background-attachment: fixed;
+  z-index: 30;
+  max-height: calc(100vh - 65px);
+  position: relative;
+  & * {
+    z-index: 30;
+  }
+}
+
+.accordion-collapse {
+  overflow: hidden;
+  & .accordion-body {
+    max-height: 800px;
+    & .row {
+      position: relative;
+    }
+  }
 }
