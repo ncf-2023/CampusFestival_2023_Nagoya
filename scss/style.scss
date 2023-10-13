@@ -5,7 +5,7 @@
 @import url("https://cdn.jsdelivr.net/npm/simplelightbox@2.13.0/dist/simple-lightbox.min.css");
 @import url("https://cdn.jsdelivr.net/npm/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mochiy+Pop+One&family=Noto+Color+Emoji&display=swap");
 @import "./mixin/animation";
 @import "./mixin/color";
 @import "./mixin/font";
@@ -19,7 +19,8 @@
 }
 
 body {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Kosugi Maru", "Noto Color Emoji", sans-serif;
+  font-size: 1.2rem;
 }
 h1 {
   font-family: "Mochiy Pop One", sans-serif;

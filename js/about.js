@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", (_) => {
       setLightboxMany(".zoomWorksCharacter");
       setLightboxMany(".zoomWorksIllust");
       setLightboxMany(".zoomGoods");
-      setScrollbar("#content", (_) => runScroll());
-      setScrollbar(".accordion-body", false);
+      setScrollbar("#content", 150, (_) => runScroll());
+      setScrollbar(".accordion-body", 300, false);
       fixScrollbar();
       setScrollSpeed("#backgroundBase", 1);
       setScrollSpeed("#backgroundShapesCircle", 1.4);
@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", (_) => {
       setScrollSpeed("#backgroundShapesTriangle", 2);
     });
 });
-function setScrollbar(e, c) {
+function setScrollbar(e, a, c) {
   $(e).mCustomScrollbar({
     axis: "y",
     theme: "rounded-dots-dark",
     scrollbarPosition: "inside",
     scrollInertia: 350,
-    mouseWheel: { scrollAmount: 150 },
+    mouseWheel: { scrollAmount: a },
     scrollButtons: { enable: false },
     callbacks: {
       whileScrolling: c,

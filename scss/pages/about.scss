@@ -7,6 +7,45 @@
   background-repeat: no-repeat;
   background-attachment: local;
 }
+
+.headingUnderline {
+  border-top: 3px solid $darkpurple;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.textbox-orange {
+  background-color: $txtboxOrange;
+  padding: 2rem 1rem;
+  line-height: 3rem;
+}
+
+.accordion-item {
+  background-color: transparent;
+  .accordion-button {
+    background-color: $contentbg;
+    border: solid $darkpurple;
+    border-width: 0 0 3px 3px;
+    font-size: 28px;
+    &:focus {
+      box-shadow: none;
+    }
+    &:not(.collapsed) {
+      color: unset;
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    &::after {
+      background-image: url("../../media/accordion-btn-icon.svg");
+      background-position: center;
+      width: 2rem;
+      background-size: 50px;
+      height: 2rem;
+    }
+  }
+}
+
 .card {
   & > img {
     background-color: #ccc;
@@ -34,25 +73,25 @@
   &Shapes {
     &Circle {
       background-image: url(../../media/index_bgShapeCircle.png);
-      background-size: 70%;
+      background-size: 60%;
       background-repeat: repeat;
       z-index: 21;
     }
     &Line {
       background-image: url(../../media/index_bgShapeLine.png);
-      background-size: 70%;
+      background-size: 60%;
       background-repeat: repeat;
       z-index: 22;
     }
     &Quadrilateral {
       background-image: url(../../media/index_bgShapeQuadrilateral.png);
-      background-size: 70%;
+      background-size: 60%;
       background-repeat: repeat;
       z-index: 23;
     }
     &Triangle {
       background-image: url(../../media/index_bgShapeTriangle.png);
-      background-size: 70%;
+      background-size: 60%;
       background-repeat: repeat;
       z-index: 24;
     }
@@ -65,8 +104,8 @@
 // }
 
 #content {
-  background-color: #fff8;
-  backdrop-filter: blur(10px);
+  background-color: $contentbg;
+  backdrop-filter: blur(6px);
   background-attachment: fixed;
   z-index: 30;
   max-height: calc(100vh - 65px);
@@ -78,8 +117,22 @@
 
 .accordion-collapse {
   overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: calc(100% - 0.5rem);
+    margin-left: 0.5rem;
+    height: 1rem;
+    background-color: $contentbg;
+  }
   & .accordion-body {
     max-height: 800px;
+    overflow: hidden;
+    background-color: $contentbg;
+    border-left: 3px solid $darkpurple;
+    padding: 0.25rem 0 0.25rem 0.75rem;
+    margin-left: 0.5rem;
     & .row {
       position: relative;
     }
