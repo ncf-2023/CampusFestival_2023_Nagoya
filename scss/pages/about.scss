@@ -16,14 +16,47 @@
   display: none;
 }
 
-#backgroundShapesCircle {
+.bg {
+  margin-top: 65px;
   width: 100%;
   height: 100%;
-  background-image: url(../../media/index_bgShapes.png);
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 20;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+#background {
+  &Base {
+    background-image: url(../../media/index_bgMainNew.png);
+    z-index: 20;
+  }
+  &Shapes {
+    &Circle {
+      background-image: url(../../media/index_bgShapeCircle.png);
+      background-size: 70%;
+      background-repeat: repeat;
+      z-index: 21;
+    }
+    &Line {
+      background-image: url(../../media/index_bgShapeLine.png);
+      background-size: 70%;
+      background-repeat: repeat;
+      z-index: 22;
+    }
+    &Quadrilateral {
+      background-image: url(../../media/index_bgShapeQuadrilateral.png);
+      background-size: 70%;
+      background-repeat: repeat;
+      z-index: 23;
+    }
+    &Triangle {
+      background-image: url(../../media/index_bgShapeTriangle.png);
+      background-size: 70%;
+      background-repeat: repeat;
+      z-index: 24;
+    }
+  }
 }
 
 // #wrapper {
@@ -33,6 +66,7 @@
 
 #content {
   background-color: #fff8;
+  backdrop-filter: blur(10px);
   background-attachment: fixed;
   z-index: 30;
   max-height: calc(100vh - 65px);
