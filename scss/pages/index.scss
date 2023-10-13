@@ -2,3 +2,16 @@
 body {
   text-align: center;
 }
+#content {
+  max-height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+.card {
+  & > img {
+    background-color: #ccc;
+  }
+}
+.domTemplate {
+  display: none;
+}
