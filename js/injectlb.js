@@ -4,6 +4,7 @@ function setLightboxOne(q) {
     new SimpleLightbox(q, {
       sourceAttr: "data-raw",
       nav: false,
+      captions: true,
       captionsData: "alt",
       animationSlide: false,
       loop: false,
@@ -15,11 +16,8 @@ function setLightboxMany(q) {
   lba.push(
     new SimpleLightbox(q, {
       sourceAttr: "data-raw",
-      navText: [
-        '<img style="width:inherit;" src="../media/chevron_left.svg">',
-        '<img style="width:inherit;" src="../media/chevron_right.svg">',
-      ],
-      captionsData: "alt",
+      navText: ['<img style="width:inherit;" src="../media/chevron_left.svg">', '<img style="width:inherit;" src="../media/chevron_right.svg">'],
+      // captionsData: "alt",
       overlayOpacity: 0.8,
     })
   );
