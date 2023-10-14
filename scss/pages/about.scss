@@ -26,6 +26,15 @@
 }
 
 .textbox-orange {
+  &::before {
+    content: "";
+    width: 200px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-2.5rem) rotateZ(2deg);
+    background-image: linear-gradient(50deg, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa, $contentbg, #fffa);
+  }
   background-color: $txtboxOrange;
   padding: 2rem 1rem;
   line-height: 3rem;
