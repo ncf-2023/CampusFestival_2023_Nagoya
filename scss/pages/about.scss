@@ -8,6 +8,17 @@
   background-attachment: local;
 }
 
+@include sp {
+  .zoomNagona {
+    margin: 1rem 0;
+    img {
+      background-color: $contentbg;
+      border-radius: 20px;
+      padding: 1rem;
+    }
+  }
+}
+
 .headingUnderline {
   border-top: 3px solid $darkpurple;
   opacity: 1;
