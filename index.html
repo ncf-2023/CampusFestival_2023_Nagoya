@@ -5,56 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More Fun More Enjoy 名古屋イチのフェスティバル ~最高の記憶の１ページ~</title>
     <link rel="stylesheet" href="./scss/pages/index.css" />
+    <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon" />
   </head>
   <body>
     <div id="header"></div>
 
-    <!--画像は素材が無いんで同じの使い回してます-->
     <div class="main" id="content">
       <div class="png">
         <ul>
-        <li><img src="media/about_works231100574001Character.png" alt=""width="400" ></li><!--てるてる坊主みたいなやつ-->
+        <li><img src="media/about_works231100574001Character.png" alt=""width="400" ></li>
         <li><img src="media/about_works211101144001Character.png" alt=""width="300" ></li> 
         <li><img src="media/about_works231100705001Character.png" alt=""width="200" ></li> 
         </ul>
         
-      </div><!--scssでflexおねがいします--><!--画像サイズバラバラじゃねーかよ（発狂）-->
-      <img src="media/index_logostr.png" alt="文字だけロゴ" width="1000" style="display: block; margin: auto;"/>
+      </div><!--scssでflexおねがいします-->
+      <div class="rogo"><img src="media/index_logostr.png" alt="文字だけロゴ" width="1000" style="display: block; margin: auto;" /></div>
       <div class="themeandtimetable">
-        <p>テーマ<br />〜ハロウィン〜<br />開催日時:10/28（土）</p>
+        <h3><p>テーマ<br />〜ハロウィン〜<br />開催日時:10/28（土）</p></h3>
       </div>
       <div class="time schedule">
         <h1>タイムスケジュール</h1>
-        <details>
+        <details class="details">
           <!--改行と文字サイズは後からやる-->
-          <summary>キャンクレ珈琲</summary>
-          　11:00～
-          <p>おばけクレープとこだわりのコーヒー</p>
-          <p><担当者の一言></p>
-          <p>
+          <summary class="details-summary">キャンクレ珈琲</summary>
+          <p class="details-content">　11:00～<br>
+          おばけクレープとこだわりのコーヒー<br>
+          <担当者の一言><br>
             本格的なハロウィン風クレープと自販機のコーヒーとは一味違う“珈琲“をお届けします！<br />
-            そして…絶対焼きそばには負けません！
-          </p>
+            そして…絶対焼きそばには負けません！</p>
         </details>
-        <details>
-          <summary>成田'sキッチン</summary>
-          　11:00～
-          <p>現役DKが作る昔ならではの安いソース焼きそば</p>
-          <p><担当者の一言></p>
-          <p>野菜たっぷり美味しい手作りソース焼きそばです。クレープでお腹いっぱいにはなりません。</p>
+        <details class="details">
+          <summary class="details-summary">成田'sキッチン</summary>
+          <p class="details-content">　11:00～<br>
+            現役DKが作る昔ならではの安いソース焼きそば<br>
+            <担当者の一言><br>
+            野菜たっぷり美味しい手作りソース焼きそばです。クレープでお腹いっぱいにはなりません。</p>
         </details>
-        <details>
-          <summary>NS商店</summary>
-          　11:00～
-          <p>ステッカーガチャや恋みくじなどなど販売します！</p>
+        <details class="details">
+          <summary class="details-summary">NS商店</summary>
+          <p class="details-content">　11:00～<br>
+            ステッカーガチャや恋みくじなどなど販売します！</p>
         </details>
-        <details>
-          <summary>常設企画</summary>
-          　11:00～
-          <p>キャンパス全体を使って謎解きゲームに挑戦しよう！ 他にもM教室で射的ができたり、ブルックリンにはフォトスポットも!</p>
+        <details class="details">
+          <summary class="details-summary">常設企画</summary>
+          <p class="details-content">　11:00～<br>
+            キャンパス全体を使って謎解きゲームに挑戦しよう！ 他にもM教室で射的ができたり、ブルックリンにはフォトスポットも!</p>
         </details>
-        <details>
-          <summary>ステージ企画~6つの企画~</summary>
+        <details class="details">
+          <summary class="details-summary">ステージ企画~6つの企画~</summary>
           　11:30～
           <p>主な企画</p>
           <ul>
@@ -72,18 +70,26 @@
       </div>
       <div class="attention">
         <h1>注意事項</h1>
-        事前にフォームにて、出席を表明されていない方は防犯対策の為、ご参加いただけません。<br />
+        <p class="text">事前にフォームにて、出席を表明されていない方は防犯対策の為、ご参加いただけません。<br />
         また、大変申し訳ございませんが、ご参加いただけるのは、<br />名古屋キャンパス生の知人や親族、顔見知りのみとさせていただきます。<br />
         (例:互いに顔を知らないネットで知り合った友人などや、名前を知らないけど仲良し！といった方もご遠慮願います。)<br />
         また、保護者の方はご参加いただく場合事前にメンターにお伝えください。<br />
-        何かご不明な点がありましたら。キャンパス内にいる、カードを下げているスタッフまでお申し付けください。<br />
+        何かご不明な点がありましたら。キャンパス内にいる、カードを下げているスタッフまでお申し付けください。<br /></p>
         
       </div>
       <div class="day">
         <h1>当日について</h1>
-        当日、キャンパス内にはコスプレをしている方もおります。more…
-      </div>
+        <p class="text">当日、キャンパス内にはコスプレをしている方もおります。more…</p>
+      </div><!--やることメモ：メニューボタンを直す、背景をaboutと同じようにする、classを分かりやすくつける、
+        タイムスケジュールの中身を作る、上に上がるやつ作る、改行位置の調整、
+        scssで背景色をつける、範囲指定する、フォントなどを調整する、画像位置の調整　etc…-->
     </div>
+    <div id="backgroundBase" class="bg"></div>
+    <div id="backgroundShapesCircle" class="bg"></div>
+    <div id="backgroundShapesLine" class="bg"></div>
+    <div id="backgroundShapesQuadrilateral" class="bg"></div>
+    <div id="backgroundShapesTriangle" class="bg"></div>
+  </div>
     <script src="./js/header.js"></script>
     <script src="./js/plugin/bootstrap.bundle.min.js"></script>
      <div ><a><img href="#" src="media/about_works211101144002Character.png" width="200"></a></div>
