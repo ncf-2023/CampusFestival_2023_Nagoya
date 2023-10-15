@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", (_) => {
       setScrollSpeed("#backgroundShapesLine", 1.6);
       setScrollSpeed("#backgroundShapesQuadrilateral", 1.8);
       setScrollSpeed("#backgroundShapesTriangle", 2);
+      runScroll();
     });
 });
 function setScrollbar(e, a, c) {
