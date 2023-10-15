@@ -162,3 +162,19 @@
     }
   }
 }
+
+.zoomNagona:hover,
+.zoomWorksPoster:hover,
+.zoomWorksCharacter:hover,
+.zoomWorksIllust:hover,
+.zoomGoods:hover {
+  transform: scale(1.05);
+}
+.zoomNagona,
+.zoomWorksPoster,
+.zoomWorksCharacter,
+.zoomWorksIllust,
+.zoomGoods {
+  transition: transform 80ms ease-in-out 0ms;
+  transform: scale(1);
+}
