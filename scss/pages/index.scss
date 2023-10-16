@@ -140,3 +140,17 @@ h1 {
   right: 10px;
   z-index: 900;
 }
+ul {
+  display: flex;
+  justify-content: center;
+  }
+  
+  li {
+  list-style: none;
+  }
+  
+  li:nth-child(2) {
+  margin: 0 10px;
+  }
+  .main img{margin: 50px;}
+  
