@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", (_) => {
       setScrollbar(".accordion-body", 300, false);
       fixScrollbar();
       setScrollSpeed("#backgroundBase", 1);
+      setScrollSpeed("#backgroundLines", 1);
       setScrollSpeed("#backgroundShapesCircle", 1.4);
       setScrollSpeed("#backgroundShapesLine", 1.6);
       setScrollSpeed("#backgroundShapesQuadrilateral", 1.8);
