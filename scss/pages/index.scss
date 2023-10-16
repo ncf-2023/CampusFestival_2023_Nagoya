@@ -2,7 +2,6 @@
 body {
   text-align: center;
   background-image: url(../../media/index_bgMainNew.png);
-  background-image: linear-gradient(180deg, #cc80cc, #817ed3);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,32 +83,40 @@ h1 {
       background-size: 60%;
       background-repeat: repeat;
       z-index: 21;
+      animation: shapesAnim ease-in-out alternate both infinite 10s 0ms;
+
     }
     &Line {
       background-image: url(../../media/index_bgShapeLine.png);
       background-size: 60%;
       background-repeat: repeat;
       z-index: 22;
+      animation: shapesAnim ease-in-out alternate-reverse both infinite 12s 0ms;
+
     }
     &Quadrilateral {
       background-image: url(../../media/index_bgShapeQuadrilateral.png);
       background-size: 60%;
       background-repeat: repeat;
       z-index: 23;
+      animation: shapesAnim ease-in-out alternate-reverse both infinite 5s 0s;
+
     }
     &Triangle {
       background-image: url(../../media/index_bgShapeTriangle.png);
       background-size: 60%;
       background-repeat: repeat;
       z-index: 24;
+      animation: shapesAnim ease-in-out alternate both infinite 7s 0s;
+
     }
   }
 }
 .rogo {
-  background-color: #d3ab7e;
+  background-color: #eaaf89a7;
 }
 .themeandtimetable {
-  background-color: #e49c9cda;
+  background-color: #c59ce49b;
 }
 .text {
   background-color: #ffd7a9a9;
