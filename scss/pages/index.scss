@@ -1,7 +1,15 @@
 @import "../style.scss";
-body {
+#wrapper {
   text-align: center;
   background-image: url(../../media/index_bgMainNew.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+#wrapper {
+  background-image: url(../../media/index_bgMainNew.png);
+  background-image: linear-gradient(180deg, #cc80cc, #817ed3);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,6 +19,15 @@ body {
   max-height: calc(100vh - 70px);
   height: calc(100vh - 70px);
   overflow-y: scroll;
+  background-color: $contentbg;
+  backdrop-filter: blur(6px);
+  background-attachment: fixed;
+  z-index: 30;
+  max-height: calc(100vh - 65px);
+  position: relative;
+  & * {
+    z-index: 30;
+  }
 }
 .card {
   & > img {
@@ -57,16 +74,16 @@ h1 {
 }
 .details-content {
   padding: 20px;
-  background-color: #f4a460;
+  background-color: #b193e9c7;
   border-bottom: 2px solid #871cdf;
   border-left: 2px solid #871cdf;
-  border-right: 2px solid #871cdf
+  border-right: 2px solid #871cdf;
 }
 .bg {
   margin-top: 65px;
   width: 100%;
   height: 100%;
-
+  position: fixed;
   left: 0px;
   top: 0px;
   background-size: cover;
@@ -84,7 +101,6 @@ h1 {
       background-repeat: repeat;
       z-index: 21;
       animation: shapesAnim ease-in-out alternate both infinite 10s 0ms;
-
     }
     &Line {
       background-image: url(../../media/index_bgShapeLine.png);
@@ -92,7 +108,6 @@ h1 {
       background-repeat: repeat;
       z-index: 22;
       animation: shapesAnim ease-in-out alternate-reverse both infinite 12s 0ms;
-
     }
     &Quadrilateral {
       background-image: url(../../media/index_bgShapeQuadrilateral.png);
@@ -100,15 +115,18 @@ h1 {
       background-repeat: repeat;
       z-index: 23;
       animation: shapesAnim ease-in-out alternate-reverse both infinite 5s 0s;
-
     }
     &Triangle {
       background-image: url(../../media/index_bgShapeTriangle.png);
       background-size: 60%;
       background-repeat: repeat;
       z-index: 24;
-      animation: shapesAnim ease-in-out alternate both infinite 7s 0s;
+<<<<<<< HEAD
+            animation: shapesAnim ease-in-out alternate both infinite 7s 0s;
 
+=======
+      animation: shapesAnim ease-in-out alternate both infinite 7s 0s;
+>>>>>>> 2637651e30a057a78ae9b25a425f15e01e7995b8
     }
   }
 }
