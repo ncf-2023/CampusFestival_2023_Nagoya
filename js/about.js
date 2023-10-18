@@ -118,8 +118,9 @@ function setScrollbar(e, a, c) {
     theme: "rounded-dots-dark",
     scrollbarPosition: "inside",
     scrollInertia: 350,
+    setHeight: "90%",
     mouseWheel: { scrollAmount: a },
-    scrollButtons: { enable: false },
+    scrollButtons: { enable: true },
     callbacks: {
       whileScrolling: c,
     },
