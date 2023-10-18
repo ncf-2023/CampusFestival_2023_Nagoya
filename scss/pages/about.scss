@@ -20,7 +20,7 @@
 }
 
 .headingUnderline {
-  border-top: 3px solid $darkpurple;
+  border-top: 3px solid $purple-0;
   opacity: 1;
   margin-top: 5px;
 }
@@ -44,7 +44,7 @@
   background-color: transparent;
   .accordion-button {
     background-color: $contentbg;
-    border: solid $darkpurple;
+    border: solid $purple-0;
     border-width: 0 0 3px 3px;
     font-size: 28px;
     &:focus {
@@ -162,7 +162,7 @@
     max-height: 800px;
     overflow: hidden;
     background-color: $contentbg;
-    border-left: 3px solid $darkpurple;
+    border-left: 3px solid $purple-0;
     padding: 0.25rem 0 0.25rem 0.75rem;
     margin-left: 0.5rem;
     & .row {
