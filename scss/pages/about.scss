@@ -186,3 +186,42 @@
   transition: transform 80ms ease-in-out 0ms;
   transform: scale(1);
 }
+
+.jumpToTop {
+  z-index: 1035;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  & img {
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    transition-property: filter, transform;
+  }
+  &::before {
+    opacity: 0;
+    content: "Go To Top!";
+    display: block;
+    position: absolute;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+    z-index: 1036;
+    width: 180px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    filter: brightness(0) grayscale(0) invert(63%) sepia(10%) saturate(1285%) hue-rotate(241deg) brightness(108%) contrast(81%);
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 17px;
+  }
+  cursor: pointer;
+  &:hover {
+    & img {
+      filter: brightness(10) grayscale(1);
+      transform: rotateY(360deg);
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
+}
