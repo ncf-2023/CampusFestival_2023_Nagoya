@@ -25,6 +25,8 @@
   z-index: 30;
   max-height: calc(100vh - 65px);
   position: relative;
+  max-width: 1250px;
+  margin: auto;
   & * {
     z-index: 30;
   }
