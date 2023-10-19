@@ -127,8 +127,11 @@ h1 {
     }
   }
 }
-.rogo {
+.logo {
   background-color: #eaaf89a7;
+  > img {
+    max-height: 600px;
+  }
 }
 .themeandtimetable {
   background-color: #c59ce49b;
