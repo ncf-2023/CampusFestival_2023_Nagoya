@@ -162,10 +162,13 @@ button {
 }
 .png {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   & > div {
     height: 400px;
     width: 200px;
+    @include sp {
+      width: 140px;
+    }
     display: flex;
     justify-content: center;
     & > img {
