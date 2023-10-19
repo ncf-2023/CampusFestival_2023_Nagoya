@@ -162,10 +162,12 @@ button {
 }
 .png {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   & > div {
     height: 400px;
     width: 200px;
+    display: flex;
+    justify-content: center;
     & > img {
       position: absolute;
       height: 400px;
