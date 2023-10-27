@@ -1,7 +1,6 @@
 {
   "liveSassCompile.settings.showOutputWindowOn": "Warning",
   "liveSassCompile.settings.formats": [
-
     {
       "format": "compressed",
       "extensionName": ".css",
@@ -13,5 +12,6 @@
   "liveServer.settings.host": "localhost",
   "liveServer.settings.NoBrowser": true,
   "liveServer.settings.port": 5501,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "liveServer.settings.useLocalIp": true
 }
